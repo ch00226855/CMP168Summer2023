@@ -12,17 +12,22 @@
 ## Chapter 1 Review: Introduction to Java
 **Review Exercise**: Create a "Hello World" program with Eclipse.
 
+- Create a project
+- Create a package
+- Create a class with a main method
+- Use `System.out.println()` to display texts on the screen.
+- Use the "Run" button to execute the program.
+
 ## Chapter 2 Review: Variables / Assignments
 
 ###Concepts:
-- **Variable**
-- **Variable declaration**
-- **Variable assignment**
-- **Primary variable types**
+- **Variable**: Keeps values
+- **Variable declaration**: Determines the type and the identifier of the variable. Example: `int i;`
+- **Variable assignment**: `i = 1;`
+- **Primary variable types**: (`byte`, `int`, `short`, `long`), `char`, (`float`, `double`), `boolean`.
+- **Other variable types**: `String`, `Scanner`, arrays, user-defined types. (These types store more than a single value).
 
 **Exercise**: c2.2.4 Adding a number to a variable
-
-**Solution**: 
 
 **Common errors**:
 - Read a variable that has not yet been assigned a value.
@@ -30,9 +35,41 @@
 
 ### Input / Output Basics
 
-- How to print something to the screen?
-- How to read something from user?
+- How to print something to the screen: `System.out.print`, `System.out.println` (print with a new line)
+- How to read something from user: `java.util.Scanner`
+- Useful scanner methods: `nextInt()`, `nextLine()`, `next()`
 
+Be mindful that there is an invisible new line symbol at the end of each line. Sometimes we need to use the `nextLine()` method to exhaust it.
+**Example:**
+
+```java
+Scanner keyboard = new Scanner(System.in);
+
+System.out.println("Enter something:");
+
+int num1 = keyboard.nextInt();
+String str1 = keyboard.nextLine();
+String str2 = keyboard.next();
+String str3 = keyboard.nextLine();
+
+System.out.println("num1: " + num1);
+System.out.println("str1: " + str1);
+System.out.println("str2: " + str2);
+System.out.println("str3: " + str3);
+```
+Input:
+```
+100
+Hello
+```
+
+Expected output:
+```
+num1: 100
+str1: 
+str2: Hello
+str3: 
+```
 
 ### Identifiers
 A name created by a programmer for an item like a variable or method is called an **identifier**. An identifier must
@@ -58,8 +95,15 @@ A name created by a programmer for an item like a variable or method is called a
 - **Increment operator `i++` and decrement operator `i--`**
 - `int` vs. `double`
 - Division by zero
-- Format floating-point numbers: `System.out.printf("%.2f", myFloat); ` **Watch p2.7.5 Reducing the output of pi**.
+- Format floating-point numbers: `System.out.printf("%.2f", myFloat); ` (**Review Section 3.2 for more details)
+**Watch p2.7.5 Reducing the output of pi**.
 - Scientific notation: `7.2e-4`
+Sometimes we get an scientific notation instead of 0:
+```
+System.out.println(1 - 1.0 / 5777 * 5777);
+```
+The output is `1.1e-16`, which is actually very close to the precise answer 0.0.
+
 - Final variables: variables whose values cannot change after initialization.
 
 **Exercise**: c2.7.1 Sphere volume.
@@ -77,6 +121,14 @@ A **type conversion** is a conversion of one data type to another, such as an in
 - **Implicit Conversion**
 - **Type Casting**
 
+Example:
+
+```java
+double y = 1.0 / 3.0;
+System.out.println("Before casting: " + y);
+System.out.println("After casting to int: " + (int)y);
+```
+
 **Exercise**: c2.12.2 Computing average kids per family.
 
 
@@ -84,8 +136,8 @@ A **type conversion** is a conversion of one data type to another, such as an in
 ### Strings
 A **string** is a sequence of characters.
 - A string literal surrounds a character sequence with double quotes, as in `"Hello"` or `"52 Main St"`.
-- **Store a string**
-- **Read a string from using input**
+- **Store a string**: `String str = "Hello";`
+- **Read a string from user input**: `Scanner.next()`, `Scanner.nextLine()`.
 
 **Exercise**: c2.15.2 Reading and outputting strings.
 
@@ -117,9 +169,9 @@ System.out.printf("The %s account saved you $%f over %d years\n",
 
 ## Chapter 4 Decision Branches
 A **branch** is a sequence of statements only executed under a certain condition.
-- **if**
-- **if-else**
-- **if-else if-else**
+- **if**: executes the code if the condition is true
+- **if-else**: executes the if block if the condition is true, otherwise it executes the else.
+- **if-(else if)-else**: creates multiple branches
 
 ### Equality and Inequality Operators
 - Equality: 
