@@ -181,9 +181,9 @@ A **branch** is a sequence of statements only executed under a certain condition
 - String types should **not** be compared using `==`. Instead, use its `equals()` and `compareTo()` methods.
 
 ### Logical Operators
-- And: 
-- Or: 
-- Not: 
+- And: &&
+- Or: ||
+- Not: !
 
 **Example**: p4.5.1 Logical operators
 
@@ -195,8 +195,18 @@ A **loop** is a program structure that repeated executes the loop's statement (*
 **Example**: p5.1.4 Computing an average
 
 - **The while loop**
+```java
+while (condition) {\\code block}
+```
 - **The for loop**
+```java
+for (initialize a loop variable;condition;an upate for the loop variable) {\\code block}
+```
 - **The do-while loop**
+```java
+do {\\code block}
+while (condition);
+```
 
 **Example**: p5.2.1 While loop.
 
@@ -206,6 +216,6 @@ A **loop** is a program structure that repeated executes the loop's statement (*
 
 ### Break and Continue
 
-- **break statement** 
-- **continue statement** 
+- **break statement**: terminates the loop right away.
+- **continue statement**: terminates the current iteration and start a new iteration.
 
