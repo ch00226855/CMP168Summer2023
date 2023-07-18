@@ -174,9 +174,9 @@ A **branch** is a sequence of statements only executed under a certain condition
 - **if-(else if)-else**: creates multiple branches
 
 ### Equality and Inequality Operators
-- Equality: 
-- Inequality: 
-- Relational operators: 
+- Equality: `a==7`
+- Inequality: `a!=7`
+- Relational operators: `>, <, >=, <=`.
 - Floating-point types should **not** be compared using `==` due to their imprecise presentations.
 - String types should **not** be compared using `==`. Instead, use its `equals()` and `compareTo()` methods.
 
