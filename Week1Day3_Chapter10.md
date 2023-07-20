@@ -33,7 +33,8 @@ public class RestaurantDriver {
 ```
 
 **Are there any problems with the above approach?**
-
+- If we forget to assign values to those member variables, their default values may cause problems.
+- Anyone can change the values for the member variables.
 
 ### Defining a Class
 
@@ -140,9 +141,9 @@ It is a _good practice_ to use public getter methods to access an object's data.
 ### Keyword `this`
 
 Within an instance method or a constructor, this refers to the current object (the object whose method or constructor is being called). It is helpful to make the program easier to understand.
-- Use `this` in a constructor
-- Use `this` in getter/setter methods
-- Use `this` in other methods
+- Use `this` in a constructor: `this` followed by `()` refers to a constructor method.
+- Use `this` in getter/setter methods: Typical use case: `this.name = name;`
+- Use `this` in other methods: `this.variable` will always refer to the class member variable instead of a local variable. Using this expression may avoid confusion.
 
 **Exercise**: c10.11.2: The this implicit parameter
 
