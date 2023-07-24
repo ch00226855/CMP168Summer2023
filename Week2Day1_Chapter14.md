@@ -30,6 +30,13 @@ An **abstract class** is a class that guides the design of subclasses but cannot
 - p14.2.1 - 3: Working with abstract classes.
 - p14.3.3 - 4: UML for abstract classes.
 
+**Access Modifiers**
+There four types of access modifiers `public`, `protected`, none, and `private`.
+- `public` makes the item (class, method, or variable) visible to everyone.
+- No modifier makes the item visible to everyone in the same package.
+- `protected` makes the item visible to everyone in the same package and all subclasses.
+- `private` makes the item visible to the current class only.
+
 **Example**: Pets
 ![](https://github.com/ch00226855/CMP168Summer2021/raw/main/images/chp10_AbstractClass.png)
 
