@@ -27,6 +27,13 @@ public class PetDriver {
 		System.out.println(c1.toString());
 		System.out.println(c1.equals(d1));
 		System.out.println(c1.equals(c1));
+		
+		System.out.println("===================================");
+		d1.eat();
+		Food dogFood = new Food("Crunchy Dog Treats", 250, 4);
+		d1.eat(dogFood);
+		d1.metablizeFood(dogFood);
+		d1.test();
 	}
 
 }

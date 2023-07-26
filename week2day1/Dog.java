@@ -1,6 +1,6 @@
 package week2day1;
 
-public class Dog extends Pet {
+public class Dog extends Pet implements FoodEater {
 	
 	private String favorateToy;
 	
@@ -49,7 +49,37 @@ public class Dog extends Pet {
 	public void setFavorateToy(String favorateToy) {
 		this.favorateToy = favorateToy;
 	}
+
+	@Override
+	public void eat() {
+		
+		System.out.println(this.getName() + " is eating.");
+		
+	}
+
+	@Override
+	public void eat(Food food) {
+		
+		System.out.println(this.getName() + " is eating " + food.getName()
+						+ ".");
+		
+	}
+
+	@Override
+	public double metablizeFood(Food food) {
+		System.out.println(this.getName() + " eats " + food.getName() + ", gaining "
+				 + food.getCalories() + " calories.");
+		return 0;
+	}
 	
+	public void test() {
+//		FoodEater.someNumber += 2;
+		System.out.println("Variable inherited from FoodEater: " +
+						FoodEater.someNumber);
+		FoodEater.print();
+		FoodEater.someClass obj = new FoodEater.someClass();
+		obj.print();
+	}
 	
 
 }
