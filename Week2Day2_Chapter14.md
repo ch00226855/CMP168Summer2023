@@ -3,13 +3,13 @@
 
 ## Review: Abstract Classes
 
-**Abstract classes** allow us to define a "super class" that describes key trais for multiple subclasses.
+**Abstract classes** allow us to define a "super class" that describes key traits for multiple subclasses.
 
 - Syntax:
 ```java
 abstract class AAA {
 
-    abstract void bbb() {};
+    abstract void bbb();
 
 }
 ```
@@ -43,13 +43,17 @@ Instead, Java provides **interfaces** as another mechanism for programmers to st
 
 **Exercise**: p14.4.2: UML interfaces
 
-An interface may contain:
+**An interface may contain:**
 
-- constants
+- constants (static final variables)
 - method signatures
-- default methods
+- default methods (abstract methods with a default implementation)
 - static methods
 - inner classes
+
+**An interface may not contain:**
+- non-static member vaiables
+- non-static methods
 
 **Example:** Pets that can eat and speak
 ![](https://github.com/ch00226855/CMP168Summer2021/raw/main/images/chp10_Interface.png)
