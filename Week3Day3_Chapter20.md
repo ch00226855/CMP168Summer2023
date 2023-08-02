@@ -92,10 +92,10 @@ Classes `java.awt.Graphics` and `java.awt.Graphics2D` act as paint brushes. `Gra
 
 **Example**: Can you draw the following images?
 
-![Pac Man](images/PacMan.png)
+![Pac Man](img/Week3Day3_PacMan.png)
 
 
-![Snowman](images/SnowMan.png)
+![Snowman](img/Week3Day3_SnowMan.png)
 
 ## The MVC Framework
 A Java graphical application is created based on a **model-view-controller (MVC)** framework:
