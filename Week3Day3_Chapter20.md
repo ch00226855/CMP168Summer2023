@@ -42,7 +42,7 @@ public class MyCustomJComponent extends JComponent {
 
    @Override
    public void paintComponent(Graphics g) {
-      // Cast to Graphics2D for additonal methods
+      // Cast to Graphics2D for additional methods
       Graphics2D graphicsObj = (Graphics2D)g;
 
       // Write your drawing instructions
@@ -78,7 +78,7 @@ Classes `java.awt.Graphics` and `java.awt.Graphics2D` act as paint brushes. `Gra
 - Color and Font: `setColor()`, `setFont()`
 - Stroke property: `setStroke()`
 
-**Example**: Create the histogram in Figure 14.1.5.
+**Example**: Create the histogram in Figure 20.1.5.
 
 ## Color and Font
 `java.awt.Color`:
@@ -110,7 +110,7 @@ A Java graphical application is created based on a **model-view-controller (MVC)
 The `javax.swing` package provides a lot of built-in graphical objects for programmers to use.
 
 **JLabel**: a display area for a short text string or an image
-- Constructor: `JLable(String)`
+- Constructor: `JLabel(String)`
 
 **JTextField**: a single line of user-interactible text
 - Constructor:
