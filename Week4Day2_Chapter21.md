@@ -59,7 +59,7 @@ Consider a guessing game program where a friend thinks of a number from 0 to 100
 - Incremental guessing: guess 0, 1, 2, 3, ...
 - Binary guessing: guess the average
 
-Approach 2 requires only 10 guess to guarantee a find because it narrows down the range by half every time. There is a similar **binary search** algorithm for searching in a sorted array. (p15.6.1 Binary search)
+Approach 2 requires only 10 guess to guarantee a find because it narrows down the range by half every time. There is a similar **binary search** algorithm for searching in a sorted array. (p21.6.1 Binary search)
 
 **Implement the Binary Guessing Algorithm**:
 A recursive method is a natural match for the recursive binary search algorithm. 
@@ -81,11 +81,11 @@ Suppose the length of the array is n.
 - The **Big O** notation is a mathematical way of describing how a function (running time of an algorithm) generally behaves in relation to the input size. 
 - In Big O notation, all functions that have the same growth rate (as determined by the highest order term of the function) are characterized using the same Big O notation. - - All functions that have the same growth rate are considered equivalent in Big O notation.
 
-p15.12.1: Determining big O notation of a function.
+p21.12.1: Determining big O notation of a function.
 
-Table 15.12.1: Growth rates for different input sizes.
+Table 21.12.1: Growth rates for different input sizes.
 
-Figure 15.12.2: Runtime complexities for various examples.
+Figure 21.12.2: Runtime complexities for various examples.
 
 <img src="https://miro.medium.com/v2/resize:fit:1400/1*5ZLci3SuR0zM_QlZOADv8Q.jpeg" width="600">
 
